@@ -11,10 +11,24 @@ class ModuleOptions extends AbstractOptions {
      */
     private $logFile;
     
-    function getLogFile() {
-        return $this->logFile;
+    /**
+     *
+     * @var int
+     */
+    private $filter;
+    
+    function getFilter() {
+        return $this->filter;
     }
 
+    function setFilter($filter) {
+        $this->filter = $filter;
+    }
+
+        function getLogFile() {
+        return $this->logFile;
+    }
+    
     function setLogFile($logFile) {
         $this->logFile = $logFile;
     }
