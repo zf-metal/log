@@ -1,11 +1,11 @@
 <?php
 
-namespace ZfMetal\Log\Factory\Controller\Plugin;
+namespace \ZfMetal\Log\Factory\Controller\Plugin;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
-class LogMaganerFactory implements FactoryInterface {
+class LogManagerFactory implements FactoryInterface {
 
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null) {
         $logger = $container->get('zf-metal.log');
