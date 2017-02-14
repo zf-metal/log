@@ -12,7 +12,7 @@ class LogFactory implements FactoryInterface {
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null) {
         $moduleConfig = $container->get('zf-metal-log.options');
        
-        $filter = new Zend\Log\Filter\Priority($moduleConfig->getFilter());
+        $filter = new \Zend\Log\Filter\Priority($moduleConfig->getFilter());
         $writer = new Stream($moduleConfig->getLogFile());
         $writer->addFilter($filter);
         $logger = new Log();
