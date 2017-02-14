@@ -1,6 +1,6 @@
 <?php
 
-namespace \ZfMetal\Log\Factory\Controller\Plugin;
+namespace ZfMetal\Log\Factory\Controller\Plugin;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
