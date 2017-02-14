@@ -11,7 +11,7 @@ class LogManager extends AbstractPlugin{
      */
     private $logger;
     
-    function getLogger(): \ZfMetal\Log\Log {
+    function getLogger() {
         return $this->logger;
     }
 
