@@ -3,12 +3,12 @@
 namespace ZfMetal\Log\Initializer;
 
 use Zend\Log\LoggerAwareInterface;
-use Zend\ServiceManager\InitializerInterface;
+use Zend\ServiceManager\Initializer\InitializerInterface;
 use Interop\Container\ContainerInterface;
 
 class LoggerAwareInitializer implements InitializerInterface
 {
-    public function initialize($instance,ContainerInterface $container)
+    public function __invoke(ContainerInterface $container, $instance)
     {
         if ($instance instanceof LoggerAwareInterface) {
             static $logger;
