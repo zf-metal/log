@@ -6,7 +6,7 @@ $date = new \DateTime();
 
 return[
     'zf-metal-log.options' => [
-        'log_file' => '/tmp/' . $date->format('Y-m-d') . 'log',
+        'log_file' => './logs/' . $date->format('Y-m-d') . '.log',
         'filter' => \Zend\Log\Logger::INFO,
     ]
 ];
