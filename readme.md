@@ -2,6 +2,7 @@
 
 ## Dependencies
 - zendframework/zend-log
+- zf-metal/commons
 
 ## Default path
 
