@@ -9,12 +9,14 @@ proyectPath/logs
 
 ## Config
 
-`return[
+```
+return[
     'zf-metal-log.options' => [
         'log_file' => './logs/' . $date->format('Y-m-d') . '.log',
         'filter' => \Zend\Log\Logger::INFO,
     ]
-];`
+];
+```
 
 
 ## Service Manager
