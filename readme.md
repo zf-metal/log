@@ -60,3 +60,9 @@ By Facade
 - `Logger::notice($message);`
 - `Logger::info($message);`
 - `Logger::debug($message);`
+
+## Log Exception (Message, File, Line, Trace )
+
+- `$this->logger()->exception($exception);`
+
+- `Logger::exception($exception);`
