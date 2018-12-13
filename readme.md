@@ -9,6 +9,8 @@ proyectPath/logs
 
 ## Config
 
+Add a file config (ex: zfmetal-log.global.php) in config/autoload.
+
 ```
 $date = new \DateTime();
 return[
