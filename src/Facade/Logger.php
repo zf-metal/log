@@ -1,5 +1,5 @@
 <?php
-namespace ZfMetal\Commons\Facade\Service;
+namespace ZfMetal\Log\Facade\Service;
 
 use ZfMetal\Commons\Facade\Accessor;
 
