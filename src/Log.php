@@ -16,9 +16,9 @@ class Log extends \Zend\Log\Logger
         ];
 
         $message =  $exception->getMessage();
-        $message .= PHP_EOL. " FILE: ". $exception->getFile();
-        $message .= PHP_EOL. " LINE: ". $exception->getLine();
-        $message .= PHP_EOL. " TRACE: ". $exception->getTraceAsString();
+        $message .= PHP_EOL. "FILE: ". $exception->getFile();
+        $message .= PHP_EOL. "LINE: ". $exception->getLine();
+        $message .= PHP_EOL. "TRACE: ". PHP_EOL . $exception->getTraceAsString();
         $message .= PHP_EOL." ~ END EXCEPTION ~ ".PHP_EOL;
 
         $this->err("Exception: ". $message);
